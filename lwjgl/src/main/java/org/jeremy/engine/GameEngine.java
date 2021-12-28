@@ -24,6 +24,8 @@ public class GameEngine implements Runnable {
             gameLoop();
         } catch (Exception excp) {
             excp.printStackTrace();
+        } finally {
+            gameLogic.cleanup();
         }
     }
 
