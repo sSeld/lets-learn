@@ -11,9 +11,16 @@ Uses a **Right Handed System**
 Uses a **Left Handed System**
 
 
----
+## Other
 
-# Terms
+Window coordinates have an origin in the top left corner of the window.
+
+## Projection Matrix
+
+Translate coordinates to the appropriate values for screen.
+
+## Translation/Rotation/Scale
+
 
 ## Graphics Pipeline
 

@@ -25,14 +25,14 @@ public class GameEngine implements Runnable {
         } catch (Exception excp) {
             excp.printStackTrace();
         } finally {
-            gameLogic.cleanup();
+            cleanup();
         }
     }
 
     protected void init() throws Exception {
         window.init();
         timer.init();
-        gameLogic.init();
+        gameLogic.init(window);
     }
 
     protected void gameLoop() {
@@ -58,6 +58,10 @@ public class GameEngine implements Runnable {
                 sync();
             }
         }
+    }
+
+    protected void cleanup() {
+        gameLogic.cleanup();
     }
 
     private void sync() {
