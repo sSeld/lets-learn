@@ -1,0 +1,8 @@
+﻿version: '3.9'
+services:
+  mssql:
+    image: jeremy/preload-mssql:1.0.0
+    ports:
+      - '1433:1433'
+    volumes:
+      - c:\Docker\Volumes\mssql:/var/opt/mssql/data

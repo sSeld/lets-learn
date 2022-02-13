@@ -1,0 +1,5 @@
+applicationName: "EMS"
+projectNamespace: "default"
+config:
+  logConfig: ""
+  appConfig: ""
